@@ -22,7 +22,6 @@ class Kernel
         $this->profiles = array(
             new BradMostertProfile(),
             new AkinyeleOlubodunProfile(),
-            new BradMostertProfile(),
             new DuwayneBrownProfile(),
             new JohnRouxProfile()
         );
