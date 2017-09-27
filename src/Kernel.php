@@ -1,6 +1,7 @@
 <?php
 namespace mostertb\PHPSA2017Profiles;
 
+use jonathanbossenger\PHPSA2017Profiles\Profiles\JonathanBossengerProfile;
 use mostertb\PHPSA2017Profiles\Profiles\AbstractProfile;
 use mostertb\PHPSA2017Profiles\Profiles\BradMostertProfile;
 
@@ -17,7 +18,8 @@ class Kernel
     public function __construct()
     {
         $this->profiles = array(
-            new BradMostertProfile()
+            new BradMostertProfile(),
+	        new JonathanBossengerProfile()
         );
     }
 
