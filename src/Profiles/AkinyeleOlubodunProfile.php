@@ -3,7 +3,7 @@
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
 
-class BradMostertProfile extends AbstractProfile
+class AkinyeleOlubodunProfile extends AbstractProfile
 {
 
     /**
