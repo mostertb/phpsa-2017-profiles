@@ -26,11 +26,11 @@ class RonDarbyProfile extends AbstractProfile {
    * @return string
    */
   public function getBiography() {
-    $bio = 'I\'m a freelance full stack developer. I started coding back in 2007 as a hobby, and pretty quickly it became
-    an obsession which then became my primary source of income. my resume is available online at https://www.resumonk.com/rondarby. 
-    
-    I\'m married to my high school sweet heart, have 4 kids and a cat. I ride a motorcycle and am a founder member of The Anonymous Riders SMC. 
-    I dream in code and live for learning new stuff.';
+    $bio = 'I\'m a freelance full stack developer. I started coding back in 2007 as a hobby, and pretty quickly it became<br>
+    an obsession which then became my primary source of income. my resume is available online at https://www.resumonk.com/rondarby.<br> 
+    <br>
+    I\'m married to my high school sweet heart, have 4 kids and a cat. I ride a motorcycle and am a founder member of The Anonymous Riders SMC.<br> 
+    <i>I dream in code and live for learning new stuff.</i>';
 
     return $bio;
   }
@@ -49,6 +49,20 @@ class RonDarbyProfile extends AbstractProfile {
   public function getGitHubUsername()
   {
     return 'rondarby';
+  }
+
+  /**
+   * Optional function that should return an array of OpenSource projects to which this person has contributed (or at least
+   * recommends). The index should contain the name of the project and the value should be a url to the project's
+   * homepage (typically a GitHub page)
+   *
+   * @return array
+   */
+  public function getInvolvedProjects()
+  {
+    return array(
+      'mostertb/phpsa-2017-profiles' => 'https://github.com/mostertb/phpsa-2017-profiles'
+    );
   }
   
 }
