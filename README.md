@@ -1,4 +1,6 @@
 # PHP South Africa 2017 Profiles
+[![Build Status](https://travis-ci.org/mostertb/phpsa-2017-profiles.svg?branch=master)](https://travis-ci.org/mostertb/phpsa-2017-profiles)
+
 This is a fun project intended to provide a safe environment in which to practice the mechanics of contributing to a 
 GitHub project.
 It was spawn out of the [PHP South Africa Conference](http://phpsouthafrica.com/). For more details, visit our
