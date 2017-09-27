@@ -3,6 +3,7 @@ namespace mostertb\PHPSA2017Profiles;
 
 use mostertb\PHPSA2017Profiles\Profiles\AbstractProfile;
 use mostertb\PHPSA2017Profiles\Profiles\BradMostertProfile;
+use mostertb\PHPSA2017Profiles\Profiles\JohnRouxProfile;
 
 class Kernel
 {
