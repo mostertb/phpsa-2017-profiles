@@ -2,7 +2,7 @@
 
     namespace mostertb\PHPSA2017Profiles\Profiles;
 
-    class DuwayneBrownProfile
+    class DuwayneBrownProfile extends AbstractProfile
     {
         public function getName()
         {
