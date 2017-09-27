@@ -2,8 +2,7 @@
 
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
-
-class DanielCilliers extends AbstractProfile
+class DanielCilliersProfile extends AbstractProfile
 {
     /**
      * Provides the full name of the person that the bio is about
@@ -22,7 +21,7 @@ class DanielCilliers extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'PHP deveolper for PayFast, but essentially fullstack as well.';
+        return 'PHP deveolper for PayFast, but skilled in fullstack as well.';
     }
 
     /**
