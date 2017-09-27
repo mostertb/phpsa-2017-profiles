@@ -2,7 +2,7 @@
 
     namespace mostertb\PHPSA2017Profiles\Profiles;
 
-    class DuwayneBrownProfile extends AbstractProfile
+    class EdwardLubbeProfile extends AbstractProfile
     {
         public function getName()
         {
@@ -16,6 +16,6 @@
 
         public function getGitHubUsername()
         {
-            return 'http://www.github.com/edwardlubbe';
+            return 'edwardlubbe';
         }
     }
