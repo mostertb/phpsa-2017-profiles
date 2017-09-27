@@ -1,0 +1,58 @@
+{% extends "layout.twig" %}
+
+{% block maincontent %}
+
+    <div class="list-group">
+        {% for profile in profiles %}
+            <a href="#{{ profile.getSlug() }}" class="list-group-item">{{ profile.getName() }}</a>
+        {% endfor %}
+    </div>
+
+    <hr>
+
+    <h2>Bios</h2>
+    {% for profile in profiles %}
+        <div class="media">
+            <div class="media-left">
+
+                <a name="{{ profile.getSlug() }}">
+                    <img class="media-object" width="64" height="64" src="{{ profile.getProfileImageURL() }}" alt="{{ profile.getName() }}">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{ profile.getName() }}</h4>
+                <p>
+                    {{ profile.getBiography()|raw }}
+                </p>
+                {% if profile.getGitHubUsername() is not empty %}
+                    <p>
+                        <strong>GitHub Homepage:</strong>
+                        <a href="https://github.com/{{ profile.getGitHubUsername() }}" target="_blank">
+                            {{ profile.getGitHubUsername() }}
+                        </a>
+                    </p>
+                {% endif %}
+
+                {% if profile.getMaintainedProjects()|length > 0 %}
+                    <h5>Projects</h5>
+                <ul>
+                    {% for projectName in profile.getMaintainedProjects() %}
+                        <li><a href="{{ loop.index }}" target="_blank">{{ projectName }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+                {% if profile.getMaintainedProjects()|length > 0 %}
+                    <h5>Involved In</h5>
+                <ul>
+                    {% for projectName in profile.getInvolvedProjects() %}
+                        <li><a href="{{ loop.index }}" target="_blank">{{ projectName }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
