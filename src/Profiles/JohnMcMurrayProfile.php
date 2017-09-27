@@ -3,7 +3,7 @@
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
 
-class JohnRouxProfile extends AbstractProfile
+class JohnMcMurrayProfile extends AbstractProfile
 {
 
     /**
@@ -13,7 +13,7 @@ class JohnRouxProfile extends AbstractProfile
      */
     public function getName()
     {
-        return 'John Roux';
+        return 'John McMurray';
     }
 
     /**
@@ -23,9 +23,7 @@ class JohnRouxProfile extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'John is a Dev and DevOps Engineer, currently working at HyveMobile in Cape Town<br>'.
-            'He is a regular at PHP meetups, involved in a lot of Scouts work and in invested in civic tech<br>'.
-            'Otherwise he\'s just a regular guy, always keen for a beer/wine/tea/coffee and chat :)';
+        return 'John is a PHP / embedded C developer and serial entrepreneur... He live at the sea and often does trail running in an effort to combat his chocolate binges';
     }
 
     /**
@@ -35,7 +33,7 @@ class JohnRouxProfile extends AbstractProfile
      */
     public function getProfileImageURL()
     {
-        return 'https://ca.slack-edge.com/T03A23LJR-U1MP3JV24-1d2f8eb3950a-512';
+        return 'https://en.gravatar.com/userimage/1413968/cf9c8ba50e2b240a590dcc95b40d8c98.jpeg';
     }
 
     /**
@@ -46,7 +44,7 @@ class JohnRouxProfile extends AbstractProfile
      */
     public function getGitHubUsername()
     {
-        return 'Vulcanit3';
+        return 'jsmcm';
     }
 
     /**
@@ -59,7 +57,8 @@ class JohnRouxProfile extends AbstractProfile
     public function getMaintainedProjects()
     {
         return array(
-            'MetaScout' => 'https://www.metascout.co.za',
+          'jsmcm/editor' => 'https://github.com/jsmcm/editor',
+          'jsmcm/spam-trap-for-contact-form-7' => 'https://github.com/jsmcm/spam-trap-for-contact-form-7'
         );
     }
 
@@ -73,8 +72,6 @@ class JohnRouxProfile extends AbstractProfile
     public function getInvolvedProjects()
     {
         return array(
-            'MetaScout' => 'https://www.metascout.co.za',
-            'ZATech' => 'https://zatech.co.za'
         );
     }
 }
