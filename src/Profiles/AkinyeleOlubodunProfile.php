@@ -13,7 +13,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getName()
     {
-        return 'Brad Mostert';
+        return 'Akinyele Olubodun';
     }
 
     /**
@@ -23,11 +23,11 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'Brad is a senior developer at Afrihost and a Design Patterns acolyte.<br>'.
-            'He feeds exclusively on bandwidth and coffee, likes to herd servers (you know.. like cattle), does some Open Source '.
-            'and helps organise the Johannesburg PHP Meetup. <br>'.
-            'All user input submitted to him will be ‘> /dev/mull’ for consideration. <br>'.'
-            Brad also likes long walks on the beach and craft beer.';
+        return 'Akinyele Olubodun is the founder of Ogaranya.com, SMS and ChatBot based ordering and payment solution.<br>'.
+            'He is also the founder of the Access for youths to information technology initiative. An initiative that teaches kids between ages 7 and 13 how to code from zero to professional <br />'.
+            'He is an exceptional leader and he loves Mathematics. <br>'.
+            'He loves to changed the world. <br>'.'
+            He hates git conflict.';
     }
 
     /**
@@ -37,7 +37,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getProfileImageURL()
     {
-        return 'https://s.gravatar.com/avatar/9ff2a97e7faf3529f1b78f1f737ebca0?s=80';
+        return 'https://s.gravatar.com/avatar/d207351c8a34866fb8a05d0a47748697?s=80';
     }
 
     /**
@@ -48,7 +48,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getGitHubUsername()
     {
-        return 'mostertb';
+        return 'akinyeleolubodun';
     }
 
     /**
@@ -61,8 +61,9 @@ class AkinyeleOlubodunProfile extends AbstractProfile
     public function getMaintainedProjects()
     {
         return array(
-          'Afrihost/BaseCommandBundle' => 'https://github.com/afrihost/BaseCommandBundle',
-          'mostertb/phpsa-2017-profiles' => 'https://github.com/mostertb/phpsa-2017-profiles'
+            'OpenSourceAfrica/lacecart' => 'https://github.com/OpenSourceAfrica/lacecart',
+            'akinyeleolubodun/iCashBook' => 'https://github.com/akinyeleolubodun/iCashBook',
+            'akinyeleolubodun/PHP-MS-Dynamics-CRM' => 'https://github.com/akinyeleolubodun/PHP-MS-Dynamics-CRM'
         );
     }
 
@@ -75,10 +76,6 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getInvolvedProjects()
     {
-        return array(
-            'coduo/php-humanizer' => 'https://github.com/coduo/php-humanizer/tree/master/src/Coduo/PHPHumanizer',
-            'daleattree/csvfilehandler' => 'https://github.com/daleattree/csvfilehandler',
-            'afrihost/swarm-process' => 'https://github.com/afrihost/swarm-process'
-        );
+        return[];
     }
 }
