@@ -3,7 +3,7 @@
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
 
-class VauneenPietersenBio extends AbstractProfile
+class VauneenPietersenProfile extends AbstractProfile
 {
 
     
