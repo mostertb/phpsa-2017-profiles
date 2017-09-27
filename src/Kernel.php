@@ -34,7 +34,7 @@ class Kernel
             new DuwayneBrownProfile(),
             new JohnRouxProfile(),
             new JohnMcMurrayProfile(),
-            new KittyProfile()
+            new KittyProfile(),
             new EdwardLubbeProfile(), 
         );
     }
