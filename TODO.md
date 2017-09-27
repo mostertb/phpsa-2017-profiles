@@ -32,10 +32,5 @@ is the name of the game here
 
 You may want to include some other composer packages to assist with this
 
-## Templating Engine 
-Typing out a long biography for `AbstractProfile::getBiography()` is tedious. We should look at replacing this with TWIG.
-
-If your feeling adventurous, the same is true for the index.php page
-
 ## Load Each Profile on its own page
 Speaks for itself. Bonus points for SEO urls...
