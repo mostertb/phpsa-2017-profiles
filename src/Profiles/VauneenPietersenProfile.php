@@ -23,7 +23,7 @@ class VauneenPietersenBio extends AbstractProfile
     }
 
 
-    public function getDescription()
+    public function getBiography()
     {
         return 'description: human';
     }
@@ -39,6 +39,5 @@ class VauneenPietersenBio extends AbstractProfile
     {
         return 'http://graph.facebook.com/530448473/picture/';
     }
-
 
 }
