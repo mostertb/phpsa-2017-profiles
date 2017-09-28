@@ -13,7 +13,6 @@
     "autoload": {
         "psr-4": {
             "mostertb\\PHPSA2017Profiles\\": "src/"
-            "App\\": "app/"
         },
         "exclude-from-classmap": [
             "tests/"
