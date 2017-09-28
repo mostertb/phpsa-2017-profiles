@@ -8,9 +8,6 @@ or two.
 
 Before you start to work on one of these, please open a Issue on this project to tell everyone that you are working on it
 so that we don't duplicate work.
-
-- [ ] **Default Profile Pic**
-Show some default image for Profiles which return an empty string or `null` from `AbstractProfile::getProfileImageURL()
    
 - [ ] **Local Profile Pics**
 It would be nice to add the option for profiles to commit their images to the project and have them served out of
@@ -39,6 +36,9 @@ Speaks for itself. Bonus points for SEO urls...
 
 - [x] **Tests and CI**  
 We need some basic test coverage to make merging PRs easier. Once this is done, we'll add Travis CI integration.
+
+- [x] **Default Profile Pic**
+Show some default image for Profiles which return an empty string or `null` from `AbstractProfile::getProfileImageURL()
 
 This will probably involve:
  
