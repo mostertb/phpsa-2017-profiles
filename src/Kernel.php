@@ -7,7 +7,6 @@ use mostertb\PHPSA2017Profiles\Profiles\AkinyeleOlubodunProfile;
 use mostertb\PHPSA2017Profiles\Profiles\AlexBlakeProfile;
 use mostertb\PHPSA2017Profiles\Profiles\BradMostertProfile;
 use mostertb\PHPSA2017Profiles\Profiles\JonathanBossengerProfile;
-use mostertb\PHPSA2017Profiles\Profiles\AbdurahimShariffProfile;
 use mostertb\PHPSA2017Profiles\Profiles\DanielCilliersProfile;
 use mostertb\PHPSA2017Profiles\Profiles\DuwayneBrownProfile;
 use mostertb\PHPSA2017Profiles\Profiles\EdwardLubbeProfile;
