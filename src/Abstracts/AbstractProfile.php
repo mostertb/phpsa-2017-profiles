@@ -1,6 +1,6 @@
 <?php
 
-namespace mostertb\PHPSA2017Profiles\Profiles;
+namespace mostertb\PHPSA2017Profiles\Abstracts;
 
 abstract class AbstractProfile
 {

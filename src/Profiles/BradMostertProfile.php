@@ -2,6 +2,7 @@
 
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
 
 class BradMostertProfile extends AbstractProfile
 {
@@ -23,10 +24,10 @@ class BradMostertProfile extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'Brad is a senior developer at Afrihost and a Design Patterns acolyte.<br>'.
-            'He feeds exclusively on bandwidth and coffee, likes to herd servers (you know.. like cattle), does some Open Source '.
-            'and helps organise the Johannesburg PHP Meetup. <br>'.
-            'All user input submitted to him will be ‘> /dev/mull’ for consideration. <br>'.'
+        return 'Brad is a senior developer at Afrihost and a Design Patterns acolyte.<br>' .
+            'He feeds exclusively on bandwidth and coffee, likes to herd servers (you know.. like cattle), does some Open Source ' .
+            'and helps organise the Johannesburg PHP Meetup. <br>' .
+            'All user input submitted to him will be ‘> /dev/mull’ for consideration. <br>' . '
             Brad also likes long walks on the beach and craft beer.';
     }
 
@@ -61,8 +62,8 @@ class BradMostertProfile extends AbstractProfile
     public function getMaintainedProjects()
     {
         return array(
-          'Afrihost/BaseCommandBundle' => 'https://github.com/afrihost/BaseCommandBundle',
-          'mostertb/phpsa-2017-profiles' => 'https://github.com/mostertb/phpsa-2017-profiles'
+            'Afrihost/BaseCommandBundle' => 'https://github.com/afrihost/BaseCommandBundle',
+            'mostertb/phpsa-2017-profiles' => 'https://github.com/mostertb/phpsa-2017-profiles',
         );
     }
 
@@ -78,7 +79,7 @@ class BradMostertProfile extends AbstractProfile
         return array(
             'coduo/php-humanizer' => 'https://github.com/coduo/php-humanizer/tree/master/src/Coduo/PHPHumanizer',
             'daleattree/csvfilehandler' => 'https://github.com/daleattree/csvfilehandler',
-            'afrihost/swarm-process' => 'https://github.com/afrihost/swarm-process'
+            'afrihost/swarm-process' => 'https://github.com/afrihost/swarm-process',
         );
     }
 }

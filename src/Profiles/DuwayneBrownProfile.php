@@ -1,21 +1,23 @@
 <?php
 
-    namespace mostertb\PHPSA2017Profiles\Profiles;
+namespace mostertb\PHPSA2017Profiles\Profiles;
 
-    class DuwayneBrownProfile extends AbstractProfile
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
+
+class DuwayneBrownProfile extends AbstractProfile
+{
+    public function getName()
     {
-        public function getName()
-        {
-            return 'Duwayne Brown';
-        }
-
-        public function getBiography()
-        {
-            return 'http://www.hashtec.co.za';
-        }
-
-        public function getGitHubUsername()
-        {
-            return 'http://www.github.com/misterbrownRSA';
-        }
+        return 'Duwayne Brown';
     }
+
+    public function getBiography()
+    {
+        return 'http://www.hashtec.co.za';
+    }
+
+    public function getGitHubUsername()
+    {
+        return 'http://www.github.com/misterbrownRSA';
+    }
+}

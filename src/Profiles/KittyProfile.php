@@ -2,6 +2,7 @@
 
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
 
 class KittyProfile extends AbstractProfile
 {
@@ -61,7 +62,7 @@ class KittyProfile extends AbstractProfile
         return array(
             'pest/control' => 'https://github.com/bugsnag/bugsnag-js',
             'tormenting/dogs' => 'https://github.com/stew/dogs',
-            'extended/sleep' => 'https://github.com/cloudfoundry-community/autosleep'
+            'extended/sleep' => 'https://github.com/cloudfoundry-community/autosleep',
         );
     }
 
