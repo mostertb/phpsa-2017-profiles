@@ -11,11 +11,16 @@
 
         public function getBiography()
         {
-            return 'http://www.hashtec.co.za';
+            return 'Just really wants a JetBrains license - have a look at <a href"http://www.hashtec.co.za">Hashtec</a>';
         }
 
         public function getGitHubUsername()
         {
-            return 'http://www.github.com/misterbrownRSA';
+            return 'MisterBrownRSA';
+        }
+
+        public function getProfileImageURL()
+        {
+            return 'https://en.gravatar.com/userimage/109408562/73388ef3fa14073232fee688482851d4.jpg?size=80';
         }
     }
