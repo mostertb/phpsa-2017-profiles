@@ -10,6 +10,7 @@ use mostertb\PHPSA2017Profiles\Profiles\RoyFoubisterProfile;
 use mostertb\PHPSA2017Profiles\Profiles\DuwayneBrownProfile;
 use mostertb\PHPSA2017Profiles\Profiles\JohnMcMurrayProfile;
 use mostertb\PHPSA2017Profiles\Profiles\JohnRouxProfile;
+use mostertb\PHPSA2017Profiles\Profiles\KittyProfile;
 use mostertb\PHPSA2017Profiles\Profiles\EdwardLubbeProfile;
 
 class Kernel
@@ -33,6 +34,7 @@ class Kernel
             new DuwayneBrownProfile(),
             new JohnRouxProfile(),
             new JohnMcMurrayProfile(),
+            new KittyProfile(),
             new EdwardLubbeProfile(), 
         );
     }
