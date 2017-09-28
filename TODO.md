@@ -29,6 +29,7 @@ Speaks for itself. Bonus points for SEO urls...
 
 - [x] **Tests and CI**  
 We need some basic test coverage to make merging PRs easier. Once this is done, we'll add Travis CI integration.
+
 This will probably involve:
  
  * Adding PHP Unit to the project
