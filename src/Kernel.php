@@ -12,7 +12,11 @@ use mostertb\PHPSA2017Profiles\Profiles\JohnMcMurrayProfile;
 use mostertb\PHPSA2017Profiles\Profiles\JohnRouxProfile;
 use mostertb\PHPSA2017Profiles\Profiles\KittyProfile;
 use mostertb\PHPSA2017Profiles\Profiles\EdwardLubbeProfile;
+<<<<<<< HEAD
 use mostertb\PHPSA2017Profiles\Profiles\EtienneMaraisProfile;
+=======
+use mostertb\PHPSA2017Profiles\Profiles\AlexBlakeProfile;
+>>>>>>> e256ce349049e58aede3e88f6d834fe45b774ca2
 
 class Kernel
 {
@@ -38,6 +42,7 @@ class Kernel
             new KittyProfile(),
             new EdwardLubbeProfile(),
             new EtienneMaraisProfile(),
+            new AlexBlakeProfile(),
         );
     }
 
