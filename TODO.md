@@ -22,13 +22,6 @@ is the name of the game here
 
 You may want to include some other composer packages to assist with this
 
-- [ ] **Templating Engine** 
-Being worked on by @MisterBrownRSA in #14 
-
-Typing out a long biography for `AbstractProfile::getBiography()` is tedious. We should look at replacing this with TWIG.
-
-If your feeling adventurous, the same is true for the index.php page
-
 - [ ] **Load Each Profile on its own page**
 Speaks for itself. Bonus points for SEO urls...
 
@@ -37,12 +30,19 @@ Speaks for itself. Bonus points for SEO urls...
 - [x] **Tests and CI**  
 We need some basic test coverage to make merging PRs easier. Once this is done, we'll add Travis CI integration.
 
-- [x] **Default Profile Pic**
-Show some default image for Profiles which return an empty string or `null` from `AbstractProfile::getProfileImageURL()
-
 This will probably involve:
  
  * Adding PHP Unit to the project
  * A basic 'functional test' to ensure that the project doesnt fatal error
  * Possibly test that all of the required fields of all of the Profiles are not empty strings (A provider that uses `Kernel::getProfiles()`
    would work well here)
+
+- [x] **Default Profile Pic**
+Show some default image for Profiles which return an empty string or `null` from `AbstractProfile::getProfileImageURL()
+
+- [x] **Templating Engine** 
+Thanks @MisterBrownRSA
+
+Typing out a long biography for `AbstractProfile::getBiography()` is tedious. We should look at replacing this with TWIG.
+
+If your feeling adventurous, the same is true for the index.php page
