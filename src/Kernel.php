@@ -4,6 +4,7 @@ namespace mostertb\PHPSA2017Profiles;
 use mostertb\PHPSA2017Profiles\Profiles\AbstractProfile;
 use mostertb\PHPSA2017Profiles\Profiles\AkinyeleOlubodunProfile;
 use mostertb\PHPSA2017Profiles\Profiles\BradMostertProfile;
+use mostertb\PHPSA2017Profiles\Profiles\RonDarbyProfile;
 use mostertb\PHPSA2017Profiles\Profiles\AbdurahimShariffProfile;
 use mostertb\PHPSA2017Profiles\Profiles\DanielCilliersProfile;
 use mostertb\PHPSA2017Profiles\Profiles\RoyFoubisterProfile;
@@ -29,6 +30,7 @@ class Kernel
     {
         $this->profiles = array(
             new BradMostertProfile(),
+            new RonDarbyProfile(),
             new AbdurahimShariffProfile(),
             new DanielCilliersProfile(),
             new AkinyeleOlubodunProfile(),

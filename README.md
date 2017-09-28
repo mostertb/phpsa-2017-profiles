@@ -33,10 +33,10 @@ Implement the following methods:
 
 If you get stuck, just look at someone else's Profile class for inspiration...
 
-### Step Three
+### Step Four
 Add your new Bio class to the construction of `mostertb\PHPSA2017Profiles\Kernel`
 
-### Step Four
+### Step Five
 
 Run the PHPUnit test and check that they pass:
 
@@ -45,10 +45,11 @@ In the root directory of the project:
     $ vendor/phpunit/phpunit/phpunit
  ```
 
-### Step Five
+### Step Six
 Submit Pull Request  ([How TO](https://help.github.com/articles/about-pull-requests/) | [Pull Request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork))
 
-### Step Six 
+### Step Seven 
+
 Tweet your Pull Request [@PHPSouthAfrica](https://twitter.com/PHPSouthAfrica) with the tag [#PHPSA2017Profiles](https://twitter.com/search?f=tweets&q=%23PHPSA2017Profiles)
 
 *This step is super important to the humor :)*
