@@ -11,7 +11,13 @@
     ],
     "minimum-stability": "stable",
     "autoload": {
-        "psr-4": { "mostertb\\PHPSA2017Profiles\\": "src/" }
+        "psr-4": { "mostertb\\PHPSA2017Profiles\\": "src/" },
+        "exclude-from-classmap": [
+            "tests/"
+        ]
     },
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
+    }
 }
