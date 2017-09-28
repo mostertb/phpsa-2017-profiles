@@ -3,3 +3,4 @@ composer.phar
 .idea/
 .git/
 composer.lock
+node_modules/

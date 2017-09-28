@@ -16,7 +16,7 @@
 
         public function getGitHubUsername()
         {
-            return 'http://www.github.com/misterbrownRSA';
+            return 'MisterBrownRSA';
         }
 
         public function getProfileImageURL()
