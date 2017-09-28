@@ -130,9 +130,19 @@ $kernel = new mostertb\PHPSA2017Profiles\Kernel();
                 <div class="media">
                     <div class="media-left">
 
-                        <a name="<?php echo $profile->getSlug(); ?>">
-                            <img class="media-object" width="64" height="64" src="<?php echo $profile->getProfileImageURL(); ?>" alt="<?php echo $fullname;?>">
-                        </a>
+                        <?php
+                            if($profile->getProfileImageURL() == null) {
+                        ?>
+                            <span style="font-size:4.5em;" class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <?php
+                            } else {
+                        ?>
+                            <a name="<?php echo $profile->getSlug(); ?>">
+                                <img class="media-object" width="64" height="64" src="<?php echo $profile->getProfileImageURL(); ?>" alt="<?php echo $fullname;?>">
+                            </a>
+                        <?php 
+                            }
+                        ?>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading"><?php echo $fullname; ?></h4>

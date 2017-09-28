@@ -1,14 +1,16 @@
-# phpjhb-open-bios
+# PHP South Africa 2017 Profiles
+[![Build Status](https://travis-ci.org/mostertb/phpsa-2017-profiles.svg?branch=master)](https://travis-ci.org/mostertb/phpsa-2017-profiles)
+
 This is a fun project intended to provide a safe environment in which to practice the mechanics of contributing to a 
 GitHub project.
 It was spawn out of the [PHP South Africa Conference](http://phpsouthafrica.com/). For more details, visit our
-[homepage](http://www.phpsa2017profiles.co.za/).
+[homepage](http://www.phpsa2017profiles.co.za).
 
 Come take part to get involved in Open Source, promote projects, win stickers and introduce yourself.
 
 # View this project online
 
-The master branch is regularly rolled out to production. It can be viewed online at [http://www.phpsa2017profiles.co.za/](http://www.phpsa2017profiles.co.za/
+The master branch is regularly rolled out to production. It can be viewed online at [http://www.phpsa2017profiles.co.za/](http://www.phpsa2017profiles.co.za)
 
 ## Instructions 
 
@@ -35,9 +37,19 @@ If you get stuck, just look at someone else's Profile class for inspiration...
 Add your new Bio class to the construction of `mostertb\PHPSA2017Profiles\Kernel`
 
 ### Step Five
-Submit Pull Request  ([How TO](https://help.github.com/articles/about-pull-requests/))
+
+Run the PHPUnit test and check that they pass:
+
+In the root directory of the project:
+ ```bash
+    $ vendor/phpunit/phpunit/phpunit
+ ```
 
 ### Step Six
+Submit Pull Request  ([How TO](https://help.github.com/articles/about-pull-requests/) | [Pull Request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork))
+
+### Step Seven 
+
 Tweet your Pull Request [@PHPSouthAfrica](https://twitter.com/PHPSouthAfrica) with the tag [#PHPSA2017Profiles](https://twitter.com/search?f=tweets&q=%23PHPSA2017Profiles)
 
 *This step is super important to the humor :)*
