@@ -1,6 +1,6 @@
 <?php
 
-    namespace App\Controllers;
+    namespace mostertb\PHPSA2017Profiles\Controllers;
 
     use App\Controllers\Controller as Controller;
 
