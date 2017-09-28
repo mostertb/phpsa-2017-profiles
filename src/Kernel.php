@@ -1,9 +1,9 @@
 <?php
 namespace mostertb\PHPSA2017Profiles;
 
-use jonathanbossenger\PHPSA2017Profiles\Profiles\JonathanBossengerProfile;
 use mostertb\PHPSA2017Profiles\Profiles\AbstractProfile;
 use mostertb\PHPSA2017Profiles\Profiles\BradMostertProfile;
+use mostertb\PHPSA2017Profiles\Profiles\JonathanBossengerProfile;
 
 class Kernel
 {

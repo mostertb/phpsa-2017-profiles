@@ -1,6 +1,6 @@
 <?php
 
-namespace jonathanbossenger\PHPSA2017Profiles\Profiles;
+namespace mostertb\PHPSA2017Profiles\Profiles;
 
 
 class JonathanBossengerProfile extends AbstractProfile
