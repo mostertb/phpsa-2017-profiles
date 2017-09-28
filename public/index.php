@@ -12,7 +12,7 @@
     $config = [
         'settings' => [
             'addContentLengthHeader' => FALSE,
-            'displayErrorDetails' => true,
+            'displayErrorDetails'    => TRUE,
         ],
     ];
     $app = new Slim($config);
@@ -20,8 +20,8 @@
 
     $container['view'] = function ($container) {
         $view = new Twig(__DIR__ . '/../views', [
-            'cache' => false,
-            'debug' => true,
+            'cache' => FALSE,
+            'debug' => TRUE,
         ]);
 
         $view->addExtension(new TwigExtension(
@@ -37,11 +37,12 @@
     $container['profiles'] = function ($container) {
         $kernel = new \mostertb\PHPSA2017Profiles\Kernel();
         $kernel_profiles = $kernel->getProfiles();
+
         return $kernel_profiles;
     };
 
 // Define app routes
-    require __DIR__ . '/../app/Routes.php';
+    require __DIR__ . '/../src/Routes.php';
 
 // Run app
     $app->run();

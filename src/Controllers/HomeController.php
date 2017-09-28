@@ -2,7 +2,7 @@
 
     namespace mostertb\PHPSA2017Profiles\Controllers;
 
-    use App\Controllers\Controller as Controller;
+    use mostertb\PHPSA2017Profiles\Controllers\Controller as Controller;
 
     class HomeController extends Controller
     {
