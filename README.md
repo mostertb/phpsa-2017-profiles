@@ -36,7 +36,7 @@ If you get stuck, just look at someone else's Profile class for inspiration...
 ### Step Three
 Add your new Bio class to the construction of `mostertb\PHPSA2017Profiles\Kernel`
 
-##* Step Four
+### Step Four
 
 Run the PHPUnit test and check that they pass:
 
