@@ -14,6 +14,7 @@ use mostertb\PHPSA2017Profiles\Profiles\JohnMcMurrayProfile;
 use mostertb\PHPSA2017Profiles\Profiles\JohnRouxProfile;
 use mostertb\PHPSA2017Profiles\Profiles\VauneenPietersenProfile;
 use mostertb\PHPSA2017Profiles\Profiles\KittyProfile;
+use mostertb\PHPSA2017Profiles\Profiles\PuffyProfile;
 use mostertb\PHPSA2017Profiles\Profiles\RonDarbyProfile;
 use mostertb\PHPSA2017Profiles\Profiles\RoyFoubisterProfile;
 
@@ -46,6 +47,7 @@ class Kernel
             new EdwardLubbeProfile(),
             new EtienneMaraisProfile(),
             new AlexBlakeProfile(),
+            new PuffyProfile(),
         );
     }
 
