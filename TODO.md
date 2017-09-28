@@ -31,6 +31,3 @@ the `src/Profiles` directory for all classes that extend `AbstractProfile` and i
 is the name of the game here
 
 You may want to include some other composer packages to assist with this
-
-## Load Each Profile on its own page
-Speaks for itself. Bonus points for SEO urls...
