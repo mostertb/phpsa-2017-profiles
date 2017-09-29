@@ -1,21 +1,23 @@
 <?php
 
-    namespace mostertb\PHPSA2017Profiles\Profiles;
+namespace mostertb\PHPSA2017Profiles\Profiles;
 
-    class EdwardLubbeProfile extends AbstractProfile
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
+
+class EdwardLubbeProfile extends AbstractProfile
+{
+    public function getName()
     {
-        public function getName()
-        {
-            return 'Edward Lubbe';
-        }
-
-        public function getBiography()
-        {
-            return 'http://www.edwardlubbe.co.za';
-        }
-
-        public function getGitHubUsername()
-        {
-            return 'edwardlubbe';
-        }
+        return 'Edward Lubbe';
     }
+
+    public function getBiography()
+    {
+        return 'http://www.edwardlubbe.co.za';
+    }
+
+    public function getGitHubUsername()
+    {
+        return 'edwardlubbe';
+    }
+}

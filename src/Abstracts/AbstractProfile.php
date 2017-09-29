@@ -1,6 +1,6 @@
 <?php
 
-namespace mostertb\PHPSA2017Profiles\Profiles;
+namespace mostertb\PHPSA2017Profiles\Abstracts;
 
 abstract class AbstractProfile
 {
@@ -24,7 +24,8 @@ abstract class AbstractProfile
      *
      * @return null|string
      */
-    public function getProfileImageURL(){
+    public function getProfileImageURL()
+    {
         return null;
     }
 
@@ -68,6 +69,6 @@ abstract class AbstractProfile
      */
     public function getSlug()
     {
-         return str_replace(' ','', strtolower($this->getName()));
+        return str_replace(' ', '', strtolower($this->getName()));
     }
 }

@@ -22,13 +22,14 @@ class Kernel
     /**
      * @var AbstractProfile[]
      */
-    private $profiles;
+    private $profiles = [];
 
     /**
      * Kernel constructor.
      */
     public function __construct()
     {
+        
         $this->profiles = array(
             new BradMostertProfile(),
             new DuwayneBrownProfile(),

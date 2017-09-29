@@ -3,6 +3,8 @@
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
 
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
+
 class EtienneMaraisProfile extends AbstractProfile
 {
 
@@ -23,8 +25,8 @@ class EtienneMaraisProfile extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'Etienne is passionate about clean code, Good music ' 
-            . 'and great coffee. He loves coding for the web and create ' 
+        return 'Etienne is passionate about clean code, Good music '
+            . 'and great coffee. He loves coding for the web and create '
             . 'amazing api\'s';
     }
 
@@ -59,9 +61,9 @@ class EtienneMaraisProfile extends AbstractProfile
     public function getMaintainedProjects()
     {
         return array(
-          'etiennemarais/lumen-starter-api' => 'https://github.com/etiennemarais/lumen-starter-api',
-          'laravel-notification-channels/clickatell' => 'https://github.com/laravel-notification-channels/clickatell',
-          'etiennemarais/hubot-yesnowtf' => 'https://github.com/etiennemarais/hubot-yesnowtf',
+            'etiennemarais/lumen-starter-api' => 'https://github.com/etiennemarais/lumen-starter-api',
+            'laravel-notification-channels/clickatell' => 'https://github.com/laravel-notification-channels/clickatell',
+            'etiennemarais/hubot-yesnowtf' => 'https://github.com/etiennemarais/hubot-yesnowtf',
         );
     }
 
