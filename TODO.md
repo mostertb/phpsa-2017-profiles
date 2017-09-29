@@ -15,15 +15,6 @@ It would be nice to add the option for profiles to commit their images to the pr
 
 This would need to be done so that it is a non-breaking change
 
-- [ ] **Automatic Loader for Profiles**
-It would be helpful to contributors to not have to add their profile class to the `Kernel` constructor. Code to look in
-the `src/Profiles` directory for all classes that extend `AbstractProfile` and instantiate an array of objects from them
-is the name of the game here
-
-You may want to include some other composer packages to assist with this
-
-- [ ] **Load Each Profile on its own page**
-Speaks for itself. Bonus points for SEO urls...
 
 # Finished To DOs
 
@@ -46,3 +37,15 @@ Thanks @MisterBrownRSA
 Typing out a long biography for `AbstractProfile::getBiography()` is tedious. We should look at replacing this with TWIG.
 
 If your feeling adventurous, the same is true for the index.php page
+
+- [x] **Load Each Profile on its own page**
+Speaks for itself. Bonus points for SEO urls...
+
+- [x] **Automatic Loader for Profiles**
+Thanks @tim_haak
+
+It would be helpful to contributors to not have to add their profile class to the `Kernel` constructor. Code to look in
+the `src/Profiles` directory for all classes that extend `AbstractProfile` and instantiate an array of objects from them
+is the name of the game here
+
+You may want to include some other composer packages to assist with this
