@@ -13,7 +13,7 @@ class BernhardBreytenbachProfile extends AbstractProfile
      */
     public function getName()
     {
-        return 'Bernhard Breytenbach';
+        return '<script>alert('Bernhard Breytenbach');</script>';
     }
 
     /**
