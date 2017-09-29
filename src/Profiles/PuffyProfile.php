@@ -1,8 +1,10 @@
 <?php
 
-namespace mostertb\PHPSA2017Profiles\Abstracts;
+namespace mostertb\PHPSA2017Profiles\Profiles;
 
-abstract class AbstractProfile
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
+
+class PuffyProfile extends AbstractProfile
 {
 
     /**
@@ -10,7 +12,10 @@ abstract class AbstractProfile
      *
      * @return string
      */
-    abstract public function getBiography();
+    public function getBiography()
+    {
+        return "Technical Director at a local South African ISP. Passionate about PHP, automation and optimisation.";
+    }
 
     /**
      * Should return a publicly accessible URL to an image of the person that the bio is about.
@@ -19,7 +24,7 @@ abstract class AbstractProfile
      */
     public function getProfileImageURL()
     {
-        return null;
+        return 'https://imgur.com/a/AfxyR';
     }
 
     /**
@@ -30,7 +35,7 @@ abstract class AbstractProfile
      */
     public function getGitHubUsername()
     {
-        return '';
+        return 'PuffTheMagicDragQueen';
     }
 
     /**
@@ -70,5 +75,8 @@ abstract class AbstractProfile
      *
      * @return string
      */
-    abstract public function getName();
+    public function getName()
+    {
+        return "Puffy";
+    }
 }

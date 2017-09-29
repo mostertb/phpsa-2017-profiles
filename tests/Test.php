@@ -27,7 +27,8 @@ class BasicTest extends PHPUnit_Framework_TestCase
      */
     public function testBiographyNotEmpty(AbstractProfile $profile)
     {
-        $this->assertNotEmpty(trim($profile->getBiography()), 'getBiography() of profile cannot return an empty string');
+        $this->assertNotEmpty(trim($profile->getBiography()),
+            'getBiography() of profile cannot return an empty string');
     }
 
     /**
@@ -36,7 +37,8 @@ class BasicTest extends PHPUnit_Framework_TestCase
      */
     public function testGithubUsernameNotEmpty(AbstractProfile $profile)
     {
-        $this->assertNotEmpty(trim($profile->getGitHubUsername()), 'getGitHubUsername() of profile cannot return an empty string');
+        $this->assertNotEmpty(trim($profile->getGitHubUsername()),
+            'getGitHubUsername() of profile cannot return an empty string');
     }
 
     /**
@@ -47,9 +49,10 @@ class BasicTest extends PHPUnit_Framework_TestCase
     public function profileProvider()
     {
         $ret = [];
-        foreach( (new Kernel())->getProfiles() as $profile){
+        foreach ((new Kernel())->getProfiles() as $profile) {
             $ret[] = [$profile];
         }
+
         return $ret;
     }
 }
