@@ -29,25 +29,14 @@ class Kernel
      */
     public function __construct()
     {
-        
-        $this->profiles = array(
-            new BradMostertProfile(),
-            new DuwayneBrownProfile(),
-            new RonDarbyProfile(),
-            new AbdurahimShariffProfile(),
-            new DanielCilliersProfile(),
-            new AkinyeleOlubodunProfile(),
-            new RoyFoubisterProfile(),
-            new JohnRouxProfile(),
-            new JohnMcMurrayProfile(),
-            new VauneenPietersenProfile(),
-            new KittyProfile(),
-            new AbdurahimShariffProfile(),
-            new DanielCilliersProfile(),
-            new EdwardLubbeProfile(),
-            new EtienneMaraisProfile(),
-            new AlexBlakeProfile(),
-        );
+        $files = scandir(__DIR__ . '/../src/Profiles', true);
+        foreach ($files as $file) {
+            if (strpos($file, 'Profile') > 1 ) {
+                $className = 'mostertb\\PHPSA2017Profiles\\Profiles\\' . basename($file, '.php');
+                $this->profiles[] = new $className();
+            }
+
+        }
     }
 
     /**
