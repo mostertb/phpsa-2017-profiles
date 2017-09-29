@@ -19,7 +19,7 @@ Fork this Repo
 
 ### Step Two
 
-Extend the `mostertb\PHPSA2017Profiles\Profiles\AbstractProfile` class as `mostertb\PHPSA2017Profiles\Profiles\<YourName>Profile`
+Extend the `mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile` class as `mostertb\PHPSA2017Profiles\Profiles\<YourName>Profile`
 
 ### Step Three 
 
@@ -34,9 +34,6 @@ Implement the following methods:
 If you get stuck, just look at someone else's Profile class for inspiration...
 
 ### Step Four
-Add your new Bio class to the construction of `mostertb\PHPSA2017Profiles\Kernel`
-
-### Step Five
 
 Run the PHPUnit test and check that they pass:
 
@@ -45,10 +42,10 @@ In the root directory of the project:
     $ vendor/phpunit/phpunit/phpunit
  ```
 
-### Step Six
+### Step Five
 Submit Pull Request  ([How TO](https://help.github.com/articles/about-pull-requests/) | [Pull Request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork))
 
-### Step Seven 
+### Step Six 
 
 Tweet your Pull Request [@PHPSouthAfrica](https://twitter.com/PHPSouthAfrica) with the tag [#PHPSA2017Profiles](https://twitter.com/search?f=tweets&q=%23PHPSA2017Profiles)
 

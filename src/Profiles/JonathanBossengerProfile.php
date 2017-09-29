@@ -11,8 +11,7 @@ class JonathanBossengerProfile extends AbstractProfile
      *
      * @return string
      */
-    public function getName()
-    {
+    public function getName() {
         return 'Jonathan Bossenger';
     }
 
@@ -21,8 +20,7 @@ class JonathanBossengerProfile extends AbstractProfile
      *
      * @return string
      */
-    public function getBiography()
-    {
+    public function getBiography() {
         return 'Jonathan is a self employed developer, currently focusing on WordPress as a platform and source of income.<br>' . 'He lives in Durbanville with his wife and 2 boys. <br>' . 'In his spare time you will find him training and teaching the art of Gracie Jiu-Jitsu or playing with whatever piece of software technology he wants to learn this week.';
     }
 
@@ -31,8 +29,7 @@ class JonathanBossengerProfile extends AbstractProfile
      *
      * @return null|string
      */
-    public function getProfileImageURL()
-    {
+    public function getProfileImageURL() {
         return 'https://s.gravatar.com/avatar/4fd3f3bbf5f32f9e4738a00d58bdbc57?s=80';
     }
 
@@ -42,8 +39,7 @@ class JonathanBossengerProfile extends AbstractProfile
      *
      * @return string
      */
-    public function getGitHubUsername()
-    {
+    public function getGitHubUsername() {
         return 'jonathanbossenger';
     }
 
@@ -54,13 +50,12 @@ class JonathanBossengerProfile extends AbstractProfile
      *
      * @return array
      */
-    public function getMaintainedProjects()
-    {
+    public function getMaintainedProjects() {
         return [
             'jonathanbossenger/divi-image-overlay-module' => 'https://github.com/jonathanbossenger/divi-image-overlay-module',
-            'jonathanbossenger/divi-add-cart-buttons' => 'https://github.com/jonathanbossenger/divi-add-cart-buttons',
-            'jonathanbossenger/aw-divi-social' => 'https://github.com/jonathanbossenger/aw-divi-social',
-            'jonathanbossenger/aw-divi-auto-title' => 'https://github.com/jonathanbossenger/aw-divi-auto-title',
+            'jonathanbossenger/divi-add-cart-buttons'     => 'https://github.com/jonathanbossenger/divi-add-cart-buttons',
+            'jonathanbossenger/aw-divi-social'            => 'https://github.com/jonathanbossenger/aw-divi-social',
+            'jonathanbossenger/aw-divi-auto-title'        => 'https://github.com/jonathanbossenger/aw-divi-auto-title',
         ];
     }
 
@@ -71,8 +66,7 @@ class JonathanBossengerProfile extends AbstractProfile
      *
      * @return array
      */
-    public function getInvolvedProjects()
-    {
+    public function getInvolvedProjects() {
         return [
             'TheCraigHewitt/Seriously-Simple-Podcasting' => 'https://github.com/TheCraigHewitt/Seriously-Simple-Podcasting',
         ];
