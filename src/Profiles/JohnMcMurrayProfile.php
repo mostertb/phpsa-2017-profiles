@@ -3,6 +3,8 @@
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
 
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
+
 class JohnMcMurrayProfile extends AbstractProfile
 {
 
@@ -57,8 +59,8 @@ class JohnMcMurrayProfile extends AbstractProfile
     public function getMaintainedProjects()
     {
         return array(
-          'jsmcm/editor' => 'https://github.com/jsmcm/editor',
-          'jsmcm/spam-trap-for-contact-form-7' => 'https://github.com/jsmcm/spam-trap-for-contact-form-7'
+            'jsmcm/editor' => 'https://github.com/jsmcm/editor',
+            'jsmcm/spam-trap-for-contact-form-7' => 'https://github.com/jsmcm/spam-trap-for-contact-form-7',
         );
     }
 
@@ -71,7 +73,6 @@ class JohnMcMurrayProfile extends AbstractProfile
      */
     public function getInvolvedProjects()
     {
-        return array(
-        );
+        return array();
     }
 }

@@ -2,7 +2,10 @@
 
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
-class JonathanBossengerProfile extends AbstractProfile{
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
+
+class JonathanBossengerProfile extends AbstractProfile
+{
     /**
      * Provides the full name of the person that the bio is about
      *
