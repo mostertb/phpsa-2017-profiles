@@ -16,6 +16,7 @@ class Kernel
      */
     public function __construct()
     {
+
         $files = scandir(__DIR__ . '/../src/Profiles', true);
         foreach ($files as $file) {
             if (strpos($file, 'Profile') > 1) {
