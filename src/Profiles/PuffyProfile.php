@@ -2,21 +2,10 @@
 
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
-
 use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
 
-class AkinyeleOlubodunProfile extends AbstractProfile
+class PuffyProfile extends AbstractProfile
 {
-
-    /**
-     * Provides the full name of the person that the bio is about
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Akinyele Olubodun';
-    }
 
     /**
      * Provides a paragraph of text about the person that the profile is about
@@ -25,11 +14,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'Akinyele Olubodun is the founder of Ogaranya.com, SMS and ChatBot based ordering and payment solution.<br>' .
-            'He is also the founder of the Access for youths to information technology initiative. An initiative that teaches kids between ages 7 and 13 how to code from zero to professional <br />' .
-            'He is an exceptional leader and he loves Mathematics. <br>' .
-            'He loves to changed the world. <br>' . '
-            He hates git conflict.';
+        return "Technical Director at a local South African ISP. Passionate about PHP, automation and optimisation.";
     }
 
     /**
@@ -39,7 +24,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getProfileImageURL()
     {
-        return 'https://s.gravatar.com/avatar/d207351c8a34866fb8a05d0a47748697?s=80';
+        return 'https://i.imgur.com/MKWoetN.png';
     }
 
     /**
@@ -50,7 +35,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getGitHubUsername()
     {
-        return 'akinyeleolubodun';
+        return 'PuffTheMagicDragQueen';
     }
 
     /**
@@ -62,11 +47,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getMaintainedProjects()
     {
-        return array(
-            'OpenSourceAfrica/lacecart' => 'https://github.com/OpenSourceAfrica/lacecart',
-            'akinyeleolubodun/iCashBook' => 'https://github.com/akinyeleolubodun/iCashBook',
-            'akinyeleolubodun/PHP-MS-Dynamics-CRM' => 'https://github.com/akinyeleolubodun/PHP-MS-Dynamics-CRM',
-        );
+        return array();
     }
 
     /**
@@ -78,6 +59,24 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getInvolvedProjects()
     {
-        return [];
+        return array();
+    }
+
+    /**
+     * @return string
+     */
+    public function getSlug()
+    {
+        return str_replace(' ', '', strtolower($this->getName()));
+    }
+
+    /**
+     * Provides the full name of the person that the profile is about
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return "Puffy";
     }
 }

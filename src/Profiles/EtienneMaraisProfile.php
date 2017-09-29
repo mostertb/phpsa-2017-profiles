@@ -5,7 +5,7 @@ namespace mostertb\PHPSA2017Profiles\Profiles;
 
 use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
 
-class AkinyeleOlubodunProfile extends AbstractProfile
+class EtienneMaraisProfile extends AbstractProfile
 {
 
     /**
@@ -15,7 +15,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getName()
     {
-        return 'Akinyele Olubodun';
+        return 'Etienne Marais';
     }
 
     /**
@@ -25,11 +25,9 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'Akinyele Olubodun is the founder of Ogaranya.com, SMS and ChatBot based ordering and payment solution.<br>' .
-            'He is also the founder of the Access for youths to information technology initiative. An initiative that teaches kids between ages 7 and 13 how to code from zero to professional <br />' .
-            'He is an exceptional leader and he loves Mathematics. <br>' .
-            'He loves to changed the world. <br>' . '
-            He hates git conflict.';
+        return 'Etienne is passionate about clean code, Good music '
+            . 'and great coffee. He loves coding for the web and create '
+            . 'amazing api\'s';
     }
 
     /**
@@ -39,7 +37,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getProfileImageURL()
     {
-        return 'https://s.gravatar.com/avatar/d207351c8a34866fb8a05d0a47748697?s=80';
+        return 'https://avatars3.githubusercontent.com/u/4479918?v=4&s=460';
     }
 
     /**
@@ -50,7 +48,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getGitHubUsername()
     {
-        return 'akinyeleolubodun';
+        return 'etiennemarais';
     }
 
     /**
@@ -63,9 +61,9 @@ class AkinyeleOlubodunProfile extends AbstractProfile
     public function getMaintainedProjects()
     {
         return array(
-            'OpenSourceAfrica/lacecart' => 'https://github.com/OpenSourceAfrica/lacecart',
-            'akinyeleolubodun/iCashBook' => 'https://github.com/akinyeleolubodun/iCashBook',
-            'akinyeleolubodun/PHP-MS-Dynamics-CRM' => 'https://github.com/akinyeleolubodun/PHP-MS-Dynamics-CRM',
+            'etiennemarais/lumen-starter-api' => 'https://github.com/etiennemarais/lumen-starter-api',
+            'laravel-notification-channels/clickatell' => 'https://github.com/laravel-notification-channels/clickatell',
+            'etiennemarais/hubot-yesnowtf' => 'https://github.com/etiennemarais/hubot-yesnowtf',
         );
     }
 
@@ -78,6 +76,10 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getInvolvedProjects()
     {
-        return [];
+        return array(
+            'spatie/last-fm-now-playing' => 'https://github.com/spatie/last-fm-now-playing',
+            'mjmlio/mjml' => 'https://github.com/mjmlio/mjml',
+            'Superbalist/monolog-google-cloud-json-formatter' => 'https://github.com/Superbalist/monolog-google-cloud-json-formatter',
+        );
     }
 }

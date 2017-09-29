@@ -5,7 +5,7 @@ namespace mostertb\PHPSA2017Profiles\Profiles;
 
 use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
 
-class RoyFoubisterProfile extends AbstractProfile
+class FrancoisSteynProfile extends AbstractProfile
 {
 
     /**
@@ -15,7 +15,7 @@ class RoyFoubisterProfile extends AbstractProfile
      */
     public function getName()
     {
-        return 'Roy Foubister';
+        return 'Francois Steyn';
     }
 
     /**
@@ -25,7 +25,7 @@ class RoyFoubisterProfile extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'Roy serves coffee to his team of UX, designers and devs.';
+        return 'Francois recently joined Zando and is currently busy with a lot of optimizations';
     }
 
     /**
@@ -35,7 +35,7 @@ class RoyFoubisterProfile extends AbstractProfile
      */
     public function getProfileImageURL()
     {
-        return 'https://s.gravatar.com/avatar/ae9f0ada620b856b11473c23f9a95751?s=80';
+        return 'https://avatars1.githubusercontent.com/u/1469570?v=4&s=460';
     }
 
     /**
@@ -46,6 +46,7 @@ class RoyFoubisterProfile extends AbstractProfile
      */
     public function getGitHubUsername()
     {
-        return 'dodge107';
+        return 'TFyre';
     }
+
 }

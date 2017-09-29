@@ -2,30 +2,38 @@
 
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
-abstract class AbstractProfile
-{
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
 
+class ZanderJanseVanRensburgProfile extends AbstractProfile
+{
     /**
-     * Provides the full name of the person that the profile is about
+     * Provides the full name of the person that the bio is about
      *
      * @return string
      */
-    abstract public function getName();
+    public function getName()
+    {
+        return 'Zander Janse van Rensburg';
+    }
 
     /**
      * Provides a paragraph of text about the person that the profile is about
      *
      * @return string
      */
-    abstract public function getBiography();
+    public function getBiography()
+    {
+        return 'Zander is still not amused, but if you can\'t beat them... join them.';
+    }
 
     /**
      * Should return a publicly accessible URL to an image of the person that the bio is about.
      *
      * @return null|string
      */
-    public function getProfileImageURL(){
-        return null;
+    public function getProfileImageURL()
+    {
+        return 'https://s.gravatar.com/avatar/78cb08b10705a9d56888236115dfe7e5?s=80';
     }
 
     /**
@@ -36,7 +44,7 @@ abstract class AbstractProfile
      */
     public function getGitHubUsername()
     {
-        return '';
+        return 'geevcookie';
     }
 
     /**
@@ -61,13 +69,5 @@ abstract class AbstractProfile
     public function getInvolvedProjects()
     {
         return array();
-    }
-
-    /**
-     * @return string
-     */
-    public function getSlug()
-    {
-         return str_replace(' ','', strtolower($this->getName()));
     }
 }

@@ -5,7 +5,7 @@ namespace mostertb\PHPSA2017Profiles\Profiles;
 
 use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
 
-class AkinyeleOlubodunProfile extends AbstractProfile
+class AlexBlakeProfile extends AbstractProfile
 {
 
     /**
@@ -15,7 +15,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getName()
     {
-        return 'Akinyele Olubodun';
+        return 'Alex Blake';
     }
 
     /**
@@ -25,11 +25,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'Akinyele Olubodun is the founder of Ogaranya.com, SMS and ChatBot based ordering and payment solution.<br>' .
-            'He is also the founder of the Access for youths to information technology initiative. An initiative that teaches kids between ages 7 and 13 how to code from zero to professional <br />' .
-            'He is an exceptional leader and he loves Mathematics. <br>' .
-            'He loves to changed the world. <br>' . '
-            He hates git conflict.';
+        return 'Alex is the lead developer at <a href="http://assemble.co.za" target="_blank">Assemble</a>, and focused on solving problems. Alex aims to build systems that are scalable and solid, and believes heavily in defensive programming styles. His experience includes: Java, Python, PHP, JS/NodeJS.';
     }
 
     /**
@@ -39,7 +35,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getProfileImageURL()
     {
-        return 'https://s.gravatar.com/avatar/d207351c8a34866fb8a05d0a47748697?s=80';
+        return 'https://assemble.co.za/files/Member/701457607270.png';
     }
 
     /**
@@ -50,7 +46,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getGitHubUsername()
     {
-        return 'akinyeleolubodun';
+        return 'AlexBlake';
     }
 
     /**
@@ -63,9 +59,10 @@ class AkinyeleOlubodunProfile extends AbstractProfile
     public function getMaintainedProjects()
     {
         return array(
-            'OpenSourceAfrica/lacecart' => 'https://github.com/OpenSourceAfrica/lacecart',
-            'akinyeleolubodun/iCashBook' => 'https://github.com/akinyeleolubodun/iCashBook',
-            'akinyeleolubodun/PHP-MS-Dynamics-CRM' => 'https://github.com/akinyeleolubodun/PHP-MS-Dynamics-CRM',
+            'AlexBlake/polymapper' => 'https://github.com/AlexBlake/polymapper',
+            'AlexBlake/php-chartling' => 'https://github.com/AlexBlake/php-chartling',
+            'AlexBlake/wpvulndb-query' => 'https://github.com/AlexBlake/wpvulndb-query',
+            'AlexBlake/eloquentsearch' => 'https://github.com/AlexBlake/eloquentsearch',
         );
     }
 
@@ -78,6 +75,8 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getInvolvedProjects()
     {
-        return [];
+        return array(
+            'Code4SA/mma-dexter' => 'https://github.com/Code4SA/mma-dexter',
+        );
     }
 }

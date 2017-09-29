@@ -1,34 +1,16 @@
 <?php
 
-namespace mostertb\PHPSA2017Profiles\Profiles;
+namespace mostertb\PHPSA2017Profiles\Abstracts;
 
-
-use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
-
-class KittyProfile extends AbstractProfile
+abstract class AbstractProfile
 {
-
-    /**
-     * Provides the full name of the person that the bio is about
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Puss in Bootstrap';
-    }
 
     /**
      * Provides a paragraph of text about the person that the profile is about
      *
      * @return string
      */
-    public function getBiography()
-    {
-        return 'You worship my code, and I tolerate your github contributions.<br>
-                I am lazy, please be patient before I accept your pull requests.<br>
-                Meow!';
-    }
+    abstract public function getBiography();
 
     /**
      * Should return a publicly accessible URL to an image of the person that the bio is about.
@@ -37,7 +19,7 @@ class KittyProfile extends AbstractProfile
      */
     public function getProfileImageURL()
     {
-        return 'https://www.autostraddle.com/wp-content/uploads/avatars/20416/c1773d96ee2ec3e5e454a58e1df174cd-bpfull.jpg';
+        return null;
     }
 
     /**
@@ -48,7 +30,7 @@ class KittyProfile extends AbstractProfile
      */
     public function getGitHubUsername()
     {
-        return 'christopherhuman';
+        return '';
     }
 
     /**
@@ -60,11 +42,7 @@ class KittyProfile extends AbstractProfile
      */
     public function getMaintainedProjects()
     {
-        return array(
-            'pest/control' => 'https://github.com/bugsnag/bugsnag-js',
-            'tormenting/dogs' => 'https://github.com/stew/dogs',
-            'extended/sleep' => 'https://github.com/cloudfoundry-community/autosleep',
-        );
+        return array();
     }
 
     /**
@@ -78,4 +56,19 @@ class KittyProfile extends AbstractProfile
     {
         return array();
     }
+
+    /**
+     * @return string
+     */
+    public function getSlug()
+    {
+        return str_replace(' ', '', strtolower($this->getName()));
+    }
+
+    /**
+     * Provides the full name of the person that the profile is about
+     *
+     * @return string
+     */
+    abstract public function getName();
 }

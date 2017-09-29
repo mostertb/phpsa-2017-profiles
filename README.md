@@ -19,7 +19,7 @@ Fork this Repo
 
 ### Step Two
 
-Extend the `mostertb\PHPSA2017Profiles\Profiles\AbstractProfile` class as `mostertb\PHPSA2017Profiles\Profiles\<YourName>Profile`
+Extend the `mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile` class as `mostertb\PHPSA2017Profiles\Profiles\<YourName>Profile`
 
 ### Step Three 
 
@@ -33,10 +33,7 @@ Implement the following methods:
 
 If you get stuck, just look at someone else's Profile class for inspiration...
 
-### Step Three
-Add your new Bio class to the construction of `mostertb\PHPSA2017Profiles\Kernel`
-
-##* Step Four
+### Step Four
 
 Run the PHPUnit test and check that they pass:
 
@@ -49,6 +46,7 @@ In the root directory of the project:
 Submit Pull Request  ([How TO](https://help.github.com/articles/about-pull-requests/) | [Pull Request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork))
 
 ### Step Six 
+
 Tweet your Pull Request [@PHPSouthAfrica](https://twitter.com/PHPSouthAfrica) with the tag [#PHPSA2017Profiles](https://twitter.com/search?f=tweets&q=%23PHPSA2017Profiles)
 
 *This step is super important to the humor :)*
@@ -76,13 +74,9 @@ You can easily run a version of this project on your local dev environment by:
     $ composer install
  ```
  
- Switch to the `public` directory
-  ```bash
-    $ cd public
-  ```
   Serve using the built-in PHP webserver:
   ```bash
     $ php -S 127.0.0.1:8000
   ```
   
-  Open the page in your web browser by going to [http://127.0.0.1:8000/index.php](http://127.0.0.1:8000/index.php)
+  Open the page in your web browser by going to [http://127.0.0.1:8000/public](http://127.0.0.1:8000/public)

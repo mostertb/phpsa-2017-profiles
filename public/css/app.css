@@ -1,0 +1,33 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.is-outlined {
+  background-color: transparent;
+  color: #fff;
+}
+
+.panel-block.section p {
+  font-size: 17px;
+  line-height: 1.4;
+  color: #95A5A6;
+}
+
+.section.alt {
+  background-color: #F0F0F0;
+}
+
+.icon-block {
+  font-size: 5em;
+}
+
+.app-heading {
+  color: #faebd7;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+}

@@ -1,23 +1,29 @@
 {
-    "name": "mostertb/phpsa-2017-profiles",
-    "description": "Humorous educational project build by the PHP South Africa 2017 conference attendees",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Brad Mostert",
-            "email": "mostertb@users.noreply.github.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "autoload": {
-        "psr-4": { "mostertb\\PHPSA2017Profiles\\": "src/" },
-        "exclude-from-classmap": [
-            "tests/"
-        ]
-    },
-    "require": {},
-    "require-dev": {
-        "phpunit/phpunit": "~4.8"
+  "name": "mostertb/phpsa-2017-profiles",
+  "description": "Humorous educational project build by the PHP South Africa 2017 conference attendees",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brad Mostert",
+      "email": "mostertb@users.noreply.github.com"
     }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "mostertb\\PHPSA2017Profiles\\": "src/"
+    },
+    "exclude-from-classmap": [
+      "tests/"
+    ]
+  },
+  "require": {
+    "slim/slim": "^3.8",
+    "slim/twig-view": "^2.3",
+    "roave/security-advisories": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8"
+  }
 }
