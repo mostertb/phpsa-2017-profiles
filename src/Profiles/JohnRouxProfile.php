@@ -3,6 +3,8 @@
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
 
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
+
 class JohnRouxProfile extends AbstractProfile
 {
 
@@ -23,8 +25,8 @@ class JohnRouxProfile extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'John is a Dev and DevOps Engineer, currently working at HyveMobile in Cape Town<br>'.
-            'He is a regular at PHP meetups, involved in a lot of Scouts work and in invested in civic tech<br>'.
+        return 'John is a Dev and DevOps Engineer, currently working at HyveMobile in Cape Town<br>' .
+            'He is a regular at PHP meetups, involved in a lot of Scouts work and in invested in civic tech<br>' .
             'Otherwise he\'s just a regular guy, always keen for a beer/wine/tea/coffee and chat :)';
     }
 
@@ -74,7 +76,7 @@ class JohnRouxProfile extends AbstractProfile
     {
         return array(
             'MetaScout' => 'https://www.metascout.co.za',
-            'ZATech' => 'https://zatech.co.za'
+            'ZATech' => 'https://zatech.co.za',
         );
     }
 }
