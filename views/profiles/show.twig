@@ -1,73 +1,73 @@
 {% extends "layout_show.twig" %}
 
 {% block title %}
-    {{ profile.getName() }}
+  Title
 {% endblock %}
 
 {% block navigation %}
-    {% include "partials/navigation.twig" %}
+  {% include "partials/navigation.twig" %}
 {% endblock %}
 
 {% block maincontent %}
-    <div class="container">
-        <div class="columns">
-            <div class="column is-9 is-offset-1">
-                <div class="section profile-heading">
-                    <div class="columns">
-                        <div class="column is-2 is-8-mobile is-offset-2-mobile">
-                            <div class="image is-128x128 avatar">
-                                <img src="{{ profile.getProfileImageURL() }}">
-                            </div>
-                        </div>
-                        <div class="column is-10 name">
-                            <p>
-                                <span class="title is-bold">{{ profile.getName() }}</span>
-                                {% if profile.getGitHubUsername() is not empty %}
-                                    <a href="https://github.com/{{ profile.getGitHubUsername() }}" class="button ">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-9 is-offset-1">
+        <div class="section profile-heading">
+          <div class="columns">
+            <div class="column is-2">
+              <div class="image is-128x128 avatar">
+                <img src="{{ profile.getProfileImageURL() }}">
+              </div>
+            </div>
+            <div class="column is-10 name">
+              <p>
+                <span class="title is-bold">{{ profile.getName() }}</span>
+                {% if profile.getGitHubUsername() is not empty %}
+                  <a href="https://github.com/{{ profile.getGitHubUsername() }}" class="button ">
                                         <span class="icon">
                                             <i class="fa fa-github"></i>
                                         </span>
-                                        <span>{{ profile.getGitHubUsername() }}</span>
-                                    </a>
-                                {% endif %}
-                            </p>
-                            <p class="tagline">{{ profile.getBiography() | raw }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="container">
-            <div class="content">
-
-
-                {% if profile.getMaintainedProjects()|length > 0 %}
-                    <hr>
-                    <div class="content">
-                        <h5>Projects</h5>
-                        <ul>
-                            {% for projectName, slug in profile.getMaintainedProjects() %}
-                                <li><a href="{{ slug }}" target="_blank">{{ projectName }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
+                    <span>{{ profile.getGitHubUsername() }}</span>
+                  </a>
                 {% endif %}
-
-                {% if profile.getMaintainedProjects()|length > 0 %}
-                    <hr>
-                    <div class="content">
-                        <h5>Involved In</h5>
-                        <ul>
-                            {% for projectName, slug in profile.getInvolvedProjects() %}
-                                <li><a href="{{ slug }}" target="_blank">{{ projectName }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                {% endif %}
+              </p>
+              <p class="tagline">{{ profile.getBiography() | raw }}</p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="content">
+
+
+        {% if profile.getMaintainedProjects()|length > 0 %}
+          <hr>
+          <div class="content">
+            <h5>Projects</h5>
+            <ul>
+              {% for projectName, slug in profile.getMaintainedProjects() %}
+                <li><a href="{{ slug }}" target="_blank">{{ projectName }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+
+        {% if profile.getMaintainedProjects()|length > 0 %}
+          <hr>
+          <div class="content">
+            <h5>Involved In</h5>
+            <ul>
+              {% for projectName, slug in profile.getInvolvedProjects() %}
+                <li><a href="{{ slug }}" target="_blank">{{ projectName }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 {% endblock %}

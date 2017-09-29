@@ -3,6 +3,8 @@
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
 
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
+
 class AkinyeleOlubodunProfile extends AbstractProfile
 {
 
@@ -23,10 +25,10 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getBiography()
     {
-        return 'Akinyele Olubodun is the founder of Ogaranya.com, SMS and ChatBot based ordering and payment solution.<br>'.
-            'He is also the founder of the Access for youths to information technology initiative. An initiative that teaches kids between ages 7 and 13 how to code from zero to professional <br />'.
-            'He is an exceptional leader and he loves Mathematics. <br>'.
-            'He loves to changed the world. <br>'.'
+        return 'Akinyele Olubodun is the founder of Ogaranya.com, SMS and ChatBot based ordering and payment solution.<br>' .
+            'He is also the founder of the Access for youths to information technology initiative. An initiative that teaches kids between ages 7 and 13 how to code from zero to professional <br />' .
+            'He is an exceptional leader and he loves Mathematics. <br>' .
+            'He loves to changed the world. <br>' . '
             He hates git conflict.';
     }
 
@@ -63,7 +65,7 @@ class AkinyeleOlubodunProfile extends AbstractProfile
         return array(
             'OpenSourceAfrica/lacecart' => 'https://github.com/OpenSourceAfrica/lacecart',
             'akinyeleolubodun/iCashBook' => 'https://github.com/akinyeleolubodun/iCashBook',
-            'akinyeleolubodun/PHP-MS-Dynamics-CRM' => 'https://github.com/akinyeleolubodun/PHP-MS-Dynamics-CRM'
+            'akinyeleolubodun/PHP-MS-Dynamics-CRM' => 'https://github.com/akinyeleolubodun/PHP-MS-Dynamics-CRM',
         );
     }
 
@@ -76,6 +78,6 @@ class AkinyeleOlubodunProfile extends AbstractProfile
      */
     public function getInvolvedProjects()
     {
-        return[];
+        return [];
     }
 }

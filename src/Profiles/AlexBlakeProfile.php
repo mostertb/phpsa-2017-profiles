@@ -3,6 +3,8 @@
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
 
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
+
 class AlexBlakeProfile extends AbstractProfile
 {
 
@@ -57,10 +59,10 @@ class AlexBlakeProfile extends AbstractProfile
     public function getMaintainedProjects()
     {
         return array(
-          'AlexBlake/polymapper' => 'https://github.com/AlexBlake/polymapper',
-          'AlexBlake/php-chartling' => 'https://github.com/AlexBlake/php-chartling',
-          'AlexBlake/wpvulndb-query' => 'https://github.com/AlexBlake/wpvulndb-query',
-          'AlexBlake/eloquentsearch' => 'https://github.com/AlexBlake/eloquentsearch'
+            'AlexBlake/polymapper' => 'https://github.com/AlexBlake/polymapper',
+            'AlexBlake/php-chartling' => 'https://github.com/AlexBlake/php-chartling',
+            'AlexBlake/wpvulndb-query' => 'https://github.com/AlexBlake/wpvulndb-query',
+            'AlexBlake/eloquentsearch' => 'https://github.com/AlexBlake/eloquentsearch',
         );
     }
 
@@ -74,7 +76,7 @@ class AlexBlakeProfile extends AbstractProfile
     public function getInvolvedProjects()
     {
         return array(
-            'Code4SA/mma-dexter' => 'https://github.com/Code4SA/mma-dexter'
+            'Code4SA/mma-dexter' => 'https://github.com/Code4SA/mma-dexter',
         );
     }
 }

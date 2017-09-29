@@ -1,16 +1,9 @@
 <?php
 
-namespace mostertb\PHPSA2017Profiles\Profiles;
+namespace mostertb\PHPSA2017Profiles\Abstracts;
 
 abstract class AbstractProfile
 {
-
-    /**
-     * Provides the full name of the person that the profile is about
-     *
-     * @return string
-     */
-    abstract public function getName();
 
     /**
      * Provides a paragraph of text about the person that the profile is about
@@ -24,7 +17,8 @@ abstract class AbstractProfile
      *
      * @return null|string
      */
-    public function getProfileImageURL(){
+    public function getProfileImageURL()
+    {
         return null;
     }
 
@@ -68,6 +62,13 @@ abstract class AbstractProfile
      */
     public function getSlug()
     {
-         return str_replace(' ','', strtolower($this->getName()));
+        return str_replace(' ', '', strtolower($this->getName()));
     }
+
+    /**
+     * Provides the full name of the person that the profile is about
+     *
+     * @return string
+     */
+    abstract public function getName();
 }
