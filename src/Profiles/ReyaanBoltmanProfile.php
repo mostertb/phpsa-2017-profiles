@@ -1,4 +1,6 @@
 <?php
+namespace mostertb\PHPSA2017Profiles\Profiles;
+
 
 use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
 
