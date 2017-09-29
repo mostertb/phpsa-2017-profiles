@@ -74,13 +74,9 @@ You can easily run a version of this project on your local dev environment by:
     $ composer install
  ```
  
- Switch to the `public` directory
-  ```bash
-    $ cd public
-  ```
   Serve using the built-in PHP webserver:
   ```bash
     $ php -S 127.0.0.1:8000
   ```
   
-  Open the page in your web browser by going to [http://127.0.0.1:8000/index.php](http://127.0.0.1:8000/index.php)
+  Open the page in your web browser by going to [http://127.0.0.1:8000/public](http://127.0.0.1:8000/public)
