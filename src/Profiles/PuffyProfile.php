@@ -2,18 +2,10 @@
 
 namespace mostertb\PHPSA2017Profiles\Profiles;
 
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
+
 class PuffyProfile extends AbstractProfile
 {
-
-    /**
-     * Provides the full name of the person that the profile is about
-     *
-     * @return string
-     */
-    public function getName()
-    {
-       return "Puffy";
-    }
 
     /**
      * Provides a paragraph of text about the person that the profile is about
@@ -75,6 +67,16 @@ class PuffyProfile extends AbstractProfile
      */
     public function getSlug()
     {
-         return str_replace(' ','', strtolower($this->getName()));
+        return str_replace(' ', '', strtolower($this->getName()));
+    }
+
+    /**
+     * Provides the full name of the person that the profile is about
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return "Puffy";
     }
 }

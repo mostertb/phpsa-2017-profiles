@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PHPSA2017 - {% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bulma.css">
-    <link rel="stylesheet" type="text/css" href="css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PHPSA2017 - {% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
 
-    {% block afterstyles %}{% endblock %}
+  {% block afterstyles %}{% endblock %}
 </head>
 <body>
-    <section class="hero is-primary is-large header-image">
-        <div class="hero-head">
-            {% block navigation %}{% endblock %}
-        </div>
-    </section>
+<section class="hero is-primary is-large header-image">
+  <div class="hero-head">
+    {% block navigation %}{% endblock %}
+  </div>
+</section>
 
-    {% block maincontent %}{% endblock %}
+{% block maincontent %}{% endblock %}
 
-    <script async type="text/javascript" src="js/bulma.js"></script>
+<script async type="text/javascript" src="js/bulma.js"></script>
 
-    {% block afterscripts %}{% endblock %}
+{% block afterscripts %}{% endblock %}
 </body>
 </html>

@@ -1,49 +1,48 @@
 <?php
-    require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
-    session_start();
+session_start();
 
-    use \Slim\App as Slim;
-
-    use \Slim\Views\Twig as Twig;
-    use \Slim\Views\TwigExtension as TwigExtension;
+use Slim\App as Slim;
+use Slim\Views\Twig as Twig;
+use Slim\Views\TwigExtension as TwigExtension;
 
 // Create and configure Slim app
-    $config = [
-        'settings' => [
-            'addContentLengthHeader' => FALSE,
-            'displayErrorDetails'    => TRUE,
-        ],
-    ];
-    $app = new Slim($config);
-    $container = $app->getContainer();
+$config = [
+    'settings' => [
+        'addContentLengthHeader' => false,
+        'displayErrorDetails' => true,
+    ],
+];
+$app = new Slim($config);
+$container = $app->getContainer();
 
-    $container['view'] = function ($container) {
-        $view = new Twig(__DIR__ . '/../views', [
-            'cache' => FALSE,
-            'debug' => TRUE,
-        ]);
+$container['view'] = function ($container) {
+    $view = new Twig(__DIR__ . '/../views', [
+        'cache' => false,
+        'debug' => true,
+    ]);
 
-        $view->addExtension(new TwigExtension(
-            $container->router,
-            $container->request->getUri()
-        ));
+    $view->addExtension(new TwigExtension(
+        $container->router,
+        $container->request->getUri()
+    ));
 
-        $view->addExtension(new Twig_Extension_Debug());
+    $view->addExtension(new Twig_Extension_Debug());
 
-        return $view;
-    };
+    return $view;
+};
 
-    $container['profiles'] = function ($container) {
-        $kernel = new \mostertb\PHPSA2017Profiles\Kernel();
-        $kernel_profiles = $kernel->getProfiles();
+$container['profiles'] = function ($container) {
+    $kernel = new \mostertb\PHPSA2017Profiles\Kernel();
+    $kernel_profiles = $kernel->getProfiles();
 
-        return $kernel_profiles;
-    };
+    return $kernel_profiles;
+};
 
 // Define app routes
-    require __DIR__ . '/../src/Routes.php';
+require __DIR__ . '/../src/Routes.php';
 
 // Run app
-    $app->run();
-    $app = new Slim;
+$app->run();
+$app = new Slim;
