@@ -1,7 +1,7 @@
 <?php
 
 use mostertb\PHPSA2017Profiles\Kernel;
-use mostertb\PHPSA2017Profiles\Profiles\AbstractProfile;
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
 
 class BasicTest extends PHPUnit_Framework_TestCase
 {
