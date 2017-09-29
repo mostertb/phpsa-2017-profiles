@@ -6,6 +6,7 @@ use mostertb\PHPSA2017Profiles\Profiles\AbstractProfile;
 use mostertb\PHPSA2017Profiles\Profiles\AkinyeleOlubodunProfile;
 use mostertb\PHPSA2017Profiles\Profiles\AlexBlakeProfile;
 use mostertb\PHPSA2017Profiles\Profiles\BradMostertProfile;
+use mostertb\PHPSA2017Profiles\Profiles\GeoffGarbersProfile;
 use mostertb\PHPSA2017Profiles\Profiles\JonathanBossengerProfile;
 use mostertb\PHPSA2017Profiles\Profiles\DanielCilliersProfile;
 use mostertb\PHPSA2017Profiles\Profiles\DuwayneBrownProfile;
@@ -51,6 +52,7 @@ class Kernel
             new EtienneMaraisProfile(),
             new AlexBlakeProfile(),
             new PuffyProfile(),
+            new GeoffGarbersProfile(),
             new KyleHicksonProfile(),
         );
     }
