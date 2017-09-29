@@ -1,6 +1,8 @@
 <?php
+
 namespace mostertb\PHPSA2017Profiles;
 
+use mostertb\PHPSA2017Profiles\Abstracts\AbstractProfile;
 use mostertb\PHPSA2017Profiles\Profiles\AbdurahimShariffProfile;
 use mostertb\PHPSA2017Profiles\Profiles\AbstractProfile;
 use mostertb\PHPSA2017Profiles\Profiles\AkinyeleOlubodunProfile;
@@ -26,35 +28,20 @@ class Kernel
     /**
      * @var AbstractProfile[]
      */
-    private $profiles;
+    private $profiles = [];
 
     /**
      * Kernel constructor.
      */
     public function __construct()
     {
-        $this->profiles = array(
-            new BradMostertProfile(),
-            new JonathanBossengerProfile(),
-            new DuwayneBrownProfile(),
-            new RonDarbyProfile(),
-            new AbdurahimShariffProfile(),
-            new DanielCilliersProfile(),
-            new AkinyeleOlubodunProfile(),
-            new RoyFoubisterProfile(),
-            new JohnRouxProfile(),
-            new JohnMcMurrayProfile(),
-            new VauneenPietersenProfile(),
-            new KittyProfile(),
-            new AbdurahimShariffProfile(),
-            new DanielCilliersProfile(),
-            new EdwardLubbeProfile(),
-            new EtienneMaraisProfile(),
-            new AlexBlakeProfile(),
-            new PuffyProfile(),
-            new GeoffGarbersProfile(),
-            new KyleHicksonProfile(),
-        );
+        $files = scandir(__DIR__ . '/../src/Profiles', true);
+        foreach ($files as $file) {
+            if (strpos($file, 'Profile') > 1) {
+                $className = 'mostertb\\PHPSA2017Profiles\\Profiles\\' . basename($file, '.php');
+                $this->profiles[] = new $className();
+            }
+        }
     }
 
     /**
