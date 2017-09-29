@@ -32,7 +32,7 @@ class PuffyProfile extends AbstractProfile
      */
     public function getProfileImageURL()
     {
-        return 'https://imgur.com/a/AfxyR';
+        return 'https://i.imgur.com/MKWoetN.png';
     }
 
     /**
