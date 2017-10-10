@@ -45,4 +45,3 @@ require __DIR__ . '/../src/Routes.php';
 
 // Run app
 $app->run();
-$app = new Slim;
