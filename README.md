@@ -8,6 +8,9 @@ It was spawn out of the [PHP South Africa Conference](http://phpsouthafrica.com/
 
 Come take part to get involved in Open Source, promote projects, win stickers and introduce yourself.
 
+> **The conference is over and Pull Requests are now closed.**
+> **If, however, you have any ideas or suggestions for next year please feel free to open an [Issue](https://github.com/mostertb/phpsa-2017-profiles/issues) - I'd love to hear from you** 
+
 # View this project online
 
 The master branch is regularly rolled out to production. It can be viewed online at [http://www.phpsa2017profiles.co.za/](http://www.phpsa2017profiles.co.za)
